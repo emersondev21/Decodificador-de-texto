@@ -4,7 +4,7 @@ Codificador e decodificador de texto, como desafio do Alura Challenges Oracle ON
 
 ## 🚀 Começando
 
-Você pode acessar o projeto [clicando aqui](https://emersondev21.github.io/Decoodificador-de-texto/), ou também fazer o download do [projeto completo](https://github.com/emersondev21/Decoodificador-de-texto/archive/refs/heads/main.zip). 
+Você pode acessar o projeto [clicando aqui](https://emersondev21.github.io/Decodificador-de-texto/), ou também fazer o download do [projeto completo](https://github.com/emersondev21/Decodificador-de-texto/archive/refs/heads/main.zip). 
 
 ## 🛠️ Construído com
 
