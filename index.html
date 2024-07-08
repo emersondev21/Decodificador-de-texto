@@ -7,16 +7,28 @@
   <title>Document</title>
 </head>
 <body>
-  <textarea id="entrada" rows="4" placeholder="Digite seu texto aqui..."></textarea>
-  <button class="cript" onclick="criptografar()">Criptografar</button>
-  <button class="descript" onclick="descriptografar()">Descriptografar</button>
+  <header><h1>&#60TextDecoder/&#62</h1></header>
+  <main>
 
-  <div class="divResult">
+    <div class="divEntrada">
 
-    <textarea class="result" id="resultado"></textarea>
-    <button class="btnCopiar">Copiar</button>
+      <textarea id="entrada" rows="4" placeholder="Digite seu texto aqui..."></textarea>
+      <div class="btnBox">
+      <button class="cript" onclick="criptografar()">Criptografar</button>
+      <button class="descript" onclick="descriptografar()">Descriptografar</button>
+      </div>
 
-  </div>
+    </div>
+    
+    <div class="divResult">
+
+      <textarea class="result" id="resultado" readonly></textarea>
+      <div class="btnBox">
+        <button class="btnCopiar" onclick="copiarTexto()">Copiar</button>
+      </div>
+      
+    </div>
+  </main>
 </body>
 <script src="./assets/scripts/scipt.js"></script>
 </html>
