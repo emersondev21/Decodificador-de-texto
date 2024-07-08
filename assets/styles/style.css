@@ -30,6 +30,10 @@ header {
   height: 80px;
 }
 
+h1 {
+  font-size: 1.5rem;
+}
+
 main {
   width: 100%;
   height: calc(100dvh - 80px);
@@ -41,7 +45,6 @@ textarea {
   resize: none;
   height: 80%;
   outline: none;
-  padding: 0 20px;
   font-size: 15px;border: 3px solid black;
   box-shadow: 5px 5px black;
   outline: none;
@@ -60,6 +63,21 @@ textarea {
   border: solid 3px black;
   box-shadow: 5px 5px black;
 }
+
+.result {
+  display: none;
+}
+
+.divMensagem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 
+p { */
+
+/* } */
 
 button {
   padding: 10px 20px;
@@ -80,6 +98,40 @@ button:active {
   justify-content: space-around;
 }
 
-@media (max-width: 800px) {
-  
+@media (max-width: 720px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+/* 
+  .result {
+    display: flex;
+  } */
+
+  .divMensagem {
+    display: none;
+  }
+
+  .divResult, .divEntrada {
+    width: 90%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--secondary-bg-color);
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: none;
+    gap: 1rem;
+    padding: 20px 0;
+  }
+
+  .btnBox {
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }

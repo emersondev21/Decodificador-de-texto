@@ -8,7 +8,7 @@ function criptografar() {
   let texto = document.getElementById('entrada').value;
 
   if (!validarTexto(texto)) {
-    alert("Por favor, use apenas letras minúsculas sem acentos ou caracteres especiais.");
+    document.getElementById("textinho").textContent = "Por favor, use apenas letras minúsculas sem acentos ou caracteres especiais.";
     return;
   }
 
@@ -18,14 +18,16 @@ function criptografar() {
     .replace(/a/g, 'ai')
     .replace(/o/g, 'ober')
     .replace(/u/g, 'ufat');
-  document.getElementById('resultado').value = textoCriptografado;
+    document.getElementById("textinho").textContent = textoCriptografado;
+    document.getElementById('resultado').value = textoCriptografado;
+  // document.getElementById('divMensagem').style.display = "none";
 }
 
 function descriptografar() {
   let texto = document.getElementById('entrada').value;
 
   if (!validarTexto(texto)) {
-    alert("Por favor, use apenas letras minúsculas sem acentos ou caracteres especiais.");
+    document.getElementById("textinho").textContent = "Por favor, use apenas letras minúsculas sem acentos ou caracteres especiais.";
     return;
   }
 
@@ -35,13 +37,11 @@ function descriptografar() {
     .replace(/ai/g, 'a')
     .replace(/ober/g, 'o')
     .replace(/ufat/g, 'u');
-  document.getElementById('resultado').value = textoDescriptografado;
+    document.getElementById("textinho").textContent = textoDescriptografado;
+    document.getElementById('resultado').value = textoDescriptografado;
+  // document.getElementById('divMensagem').style.display = "none";
 }
 
 function copiarTexto() {
-  navigator.clipboard.writeText(document.getElementById('resultado').value).then(() => {
-    alert("Texto copiado para a área de transferência.");
-  }, () => {
-    alert("Falha ao copiar o texto.");
-  });
+  navigator.clipboard.writeText(document.getElementById("resultado").value)
 }
