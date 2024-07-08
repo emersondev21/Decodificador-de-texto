@@ -104,15 +104,15 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding: 0;
   }
 /* 
   .result {
     display: flex;
   } */
 
-  .divMensagem {
-    display: none;
+  img {
+    width: 40%;
   }
 
   .divResult, .divEntrada {
